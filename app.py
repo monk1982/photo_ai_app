@@ -38,7 +38,8 @@ def main():
             response = client.generate_content([quest, img], generation_config= genai.types.GenerationConfig(temperature=2.0, max_output_tokens=300))
             response.resolve()
             st.markdown(response.text)
-    
+
+# Main codes run app    
 if __name__=='__main__':
     GOOGLE_API_KEY = os.environ.get('GOOGLE_API_KEY_NEW')
     genai.configure(api_key= GOOGLE_API_KEY)
