@@ -17,6 +17,9 @@ pages = {
     ],
 }
 
-pg = st.navigation(pages)
-if __name__ == '__main__':
+def main():
+    pg = st.navigation(pages)
     pg.run()
+
+if __name__ == '__main__':
+    main()
